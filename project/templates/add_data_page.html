@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/script.js') }}"></script>
 </head>
 <body>
 <form method="post">
-    <p><input type="text" name="name"></p>
-    <p><input type="submit" name="submit-button" value="Submit">
-    <input type="button" name="add-button" value="Add new input"></p>
+    <div id="fields">
+        <p id=""><input type="text" name="field1"></p>
+    </div>
 </form>
+<button id="add-field-button">Add field</button>
+<button id="submit-button">Submit data</button>
 </body>
 </html>
