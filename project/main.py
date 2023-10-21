@@ -8,9 +8,7 @@ def hello_world():
     if request.method == 'GET':
         return render_template('add_data_page.html')
 
-    data_from_form = request.form['name']
-    print(request.form.keys())
-    return data_from_form
+    return "response"
 
 
 if __name__ == '__main__':

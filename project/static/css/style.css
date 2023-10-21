@@ -1,0 +1,15 @@
+form div input {
+    margin-top: 20px;
+    width: 200px;
+    height: 22px;
+    font-size: 20px;
+}
+
+.submit-button, .add-button {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+* {
+    font-family: "Calibri";
+}

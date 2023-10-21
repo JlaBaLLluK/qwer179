@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ url_for('static', filename = 'js/script.js') }}"></script>
@@ -10,10 +11,10 @@
 <body>
 <form method="post">
     <div id="fields">
-        <p id=""><input type="text" name="field1"></p>
+        <input type="text" name="field1"><br>
     </div>
+    <button id="add-field-button" class="add-button" type="button">Add field</button><br>
+    <button id="submit-button" class="submit-button">Submit data</button>
 </form>
-<button id="add-field-button">Add field</button>
-<button id="submit-button">Submit data</button>
 </body>
 </html>
