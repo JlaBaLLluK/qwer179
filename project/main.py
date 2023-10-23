@@ -23,7 +23,7 @@ connection.commit()
 def add_data():
     if request.method == 'POST':
         data = json.dumps(request.form)
-        cursor.execute("INSERT INTO data_table (data) VALUES (%s})", (data,))
+        cursor.execute("INSERT INTO data_table (data) VALUES (%s)", (data,))
         connection.commit()
 
     return render_template('add_data_page.html')
