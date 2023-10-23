@@ -69,3 +69,20 @@ server {
 sudo ln -s /etc/nginx/sites-available/<имя-ранее-созданного-файла> /etc/nginx/sites-enabled
 ```
 
+## 13. Проверить файл на наличие ошибок:
+```
+sudo nginx -t
+```
+
+## 13. Если ошибок не обнаружено, перезапустить процесс nginx:
+```
+sudo systemctl restart nginx
+```
+
+## 14. Изменить настройки брандмауэра:
+```
+sudo ufw delete allow 5000
+sudo ufw allow 'Nginx Full'
+```
+
+
