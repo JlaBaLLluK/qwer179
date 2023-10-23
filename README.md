@@ -23,3 +23,8 @@ ExecStart=<путь-до-папки-с-виртульаным-окрежнием
 
 [Install] <br>
 WantedBy=multi-user.target
+
+## 7. Активировать созданный файл.
+sudo systemctl start <имя-созданного-файла>
+sudo systemctl enable <имя-созданного-файла>
+
