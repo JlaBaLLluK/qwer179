@@ -61,5 +61,6 @@ server {
         include proxy_params;
         proxy_pass http://unix:<путь-до-проекта>myproject.sock;
     }
-}```
+}
+```
 
