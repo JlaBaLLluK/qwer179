@@ -39,9 +39,9 @@ sudo apt install nginx
 sudo nano /etc/nginx/sites-available/<имя-файла>
 
 ## 11. Заполнить файл следующими настройками:
-server {
-    listen 80;
-    server_name <ваш-домен-или-IP>;
+server { <br>
+    listen 80; <br>
+    server_name <ваш-домен-или-IP>; <br>
 
     location / {
         include proxy_params;
