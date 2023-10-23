@@ -28,3 +28,7 @@ WantedBy=multi-user.target
 sudo systemctl start <имя-созданного-файла><br>
 sudo systemctl enable <имя-созданного-файла>
 
+## 8. Проверить, правильно ли все создалось.
+sudo systemctl status myproject<br>
+Если есть какие-либо ошибки, проверить созданный файл и повторить еще раз.
+
