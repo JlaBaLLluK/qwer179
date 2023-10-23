@@ -26,11 +26,13 @@ ExecStart=<путь-до-папки-с-виртульаным-окрежнием
 WantedBy=multi-user.target
 ```
 ## 7. Активировать созданный файл.
-```sudo systemctl start <имя-созданного-файла>```
-```sudo systemctl enable <имя-созданного-файла>```
+```
+sudo systemctl start <имя-созданного-файла>
+sudo systemctl enable <имя-созданного-файла>
+```
 
 ## 8. Проверить, правильно ли все создалось.
-s```udo systemctl status myproject```
+```sudo systemctl status myproject```
 Если есть какие-либо ошибки, проверить созданный файл и повторить еще раз.
 
 ## 9. Установить nginx.
