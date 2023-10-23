@@ -39,7 +39,7 @@ sudo apt install nginx
 sudo nano /etc/nginx/sites-available/<имя-файла>
 
 ## 11. Заполнить файл следующими настройками:
-server {<br>
+'''server {<br>
     listen 80;<br>
     server_name <ваш-домен-или-IP>;<br>
 
@@ -47,5 +47,5 @@ server {<br>
         include proxy_params;
         proxy_pass http://unix:<путь-до-проекта>myproject.sock;
     }
-}
+}'''
 
