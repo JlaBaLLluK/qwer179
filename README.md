@@ -9,6 +9,11 @@ git clone https://github.com/JlaBaLLluK/qwer179
 ```
 pip install -r requirements.txt
 ```
+### 3.1 Зпаустить файл main.py и попробовать подключиться к серверу:
+```
+http://<IP-адресс>:5000
+```
+
 ## 4. Деактивировать виртуальное окружения с помощбю команды:
 ```
 deactivate
