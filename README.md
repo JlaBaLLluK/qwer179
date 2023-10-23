@@ -64,6 +64,8 @@ server {
 }
 ```
 
-## 12. Привязать созданный файл к каталогу 
-```sites-enabled```
+## 12. Привязать созданный файл к каталогу sites-enabled:
+```
+sudo ln -s /etc/nginx/sites-available/<имя-ранее-созданного-файла> /etc/nginx/sites-enabled
+```
 
