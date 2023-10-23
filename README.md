@@ -1,14 +1,22 @@
 # Flask application
 # Инструкция по развертыванию:
 ## 1. Склонировать репозиторий с проектом: 
+```
 git clone https://github.com/JlaBaLLluK/qwer179
+```
 ## 2. Настроить интерпретатор Python в настройках IDE.
 ## 3. Установить все зависимости из файла requirements.txt
+```
 pip install -r requirements.txt
+```
 ## 4. Деактивировать виртуальное окружения с помощбю команды.
+```
 deactivate
+```
 ## 5. Создать служебный файл для автоматического запуска Gunicron
+```
 sudo nano /etc/systemd/system/<имя-файла.service>
+```
 ## 6. Заполнить это файл следующими настройками:
 ```
 [Unit]
@@ -32,7 +40,9 @@ sudo systemctl enable <имя-созданного-файла>
 ```
 
 ## 8. Проверить, правильно ли все создалось.
-```sudo systemctl status myproject```
+```
+sudo systemctl status myproject
+```
 Если есть какие-либо ошибки, проверить созданный файл и повторить еще раз.
 
 ## 9. Установить nginx.
