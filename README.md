@@ -32,3 +32,20 @@ sudo systemctl enable <имя-созданного-файла>
 sudo systemctl status myproject<br>
 Если есть какие-либо ошибки, проверить созданный файл и повторить еще раз.
 
+## 9. Установить nginx.
+sudo apt install nginx
+
+## 10. Создать файл конфигурации nginx.
+sudo nano /etc/nginx/sites-available/<имя-файла>
+
+## 11. Заполнить файл следующими настройками:
+server {
+    listen 80;
+    server_name <ваш-домен-или-IP>;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:<путь-до-проекта>myproject.sock;
+    }
+}
+
